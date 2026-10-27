@@ -1,11 +1,11 @@
 cask "trill" do
   arch arm: "arm64", intel: "amd64"
 
-  version "2026.10.25,23"
-  sha256 arm:   "545cd8360225e322119b2728ae752ae5efa24812960a68046a80dbedd54bab47",
-         intel: "52f0e7b2b2e7d521d21a78d636deb3e18589cbb4b987a2aca5269d1bea7bf3d9"
+  version "2026.10.25,25"
+  sha256 arm:   "08df08940d7bf11b4739389815d7a661969d68dec1c20fcd5edc815c2e93d6f7",
+         intel: "9be41319c940ff9fe3b9f5231f2fce2c7606de9c7892653978c83441f831f466"
 
-  url "https://github.com/BCook98/trill/releases/download/v2026.10.25-build.4f687db84ca8/trill-companion-#{version.csv.first}-darwin-#{arch}.zip"
+  url "https://github.com/BCook98/trill/releases/download/v2026.10.25-build.9aeb60b8e325/trill-companion-#{version.csv.first}-darwin-#{arch}.zip"
   name "Trill Companion"
   desc "Secure access to terminal sessions from your phone"
   homepage "https://trill.bcook.io/"
@@ -14,7 +14,6 @@ cask "trill" do
     skip "Updated from the signed release manifest"
   end
 
-  depends_on formula: %w[mosh tmux]
   depends_on macos: :monterey
 
   binary "trill"
